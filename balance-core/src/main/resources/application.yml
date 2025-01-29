@@ -1,0 +1,18 @@
+server:
+  port: 3003
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://localhost:3307/balance
+    username: root
+    password: root
+  kafka:
+    bootstrap-servers: localhost:9092
+
+topics:
+  balances:
+    name: balances
+    group-id: wallet
